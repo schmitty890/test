@@ -10,8 +10,7 @@
   "author": "Jason Schmitt",
   "license": "ISC",
   "scripts": {
-    "start": "nodemon app.js",
-    "heroku-postbuild": "gulp",
+    "start": "gulp",
     "test": "nyc mocha --timeout=3000 --exit",
     "lint": "eslint .",
     "watch": "nodemon server.js"

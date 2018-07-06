@@ -1,4 +1,4 @@
 build
 test
-app.js
+server.js
 gulp-tasks

@@ -32,7 +32,7 @@ gulp.task('browser-sync', ['nodemon'], function() {
 gulp.task('nodemon', ['sass', 'concatScripts'], function(done) {
   let running = false;
   return nodemon({
-    script: 'app.js',
+    script: 'server.js',
     watch: 'public/assets/'
   }).on('start', function() {
     console.log('-----------------start-----------------');

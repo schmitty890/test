@@ -9,7 +9,7 @@
   "author": "Sahat Yalkabov",
   "license": "MIT",
   "scripts": {
-    "start": "gulp",
+    "start": "node app.js",
     "test": "nyc mocha --timeout=3000 --exit",
     "lint": "eslint ."
   },

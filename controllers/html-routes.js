@@ -133,7 +133,7 @@ module.exports = function (app) {
       if(!user) { return; }
       const token = user.passwordResetToken;
       const transporter = nodemailer.createTransport({
-        service: 'smtp.gmail.com',
+        service: 'gmail',
         auth: {
           user: process.env.GMAILEMAIL,
           pass: process.env.GMAILPASS
@@ -141,6 +141,8 @@ module.exports = function (app) {
       });
       console.log('---------------TRANSPORTER-------------------');
       console.log(transporter);
+      console.log('---------------USER.EMAIL-------------------');
+      console.log(user.email);
       console.log('----------------------------------');
       const mailOptions = {
         to: user.email,

@@ -20,7 +20,6 @@ module.exports = function (app) {
     });
   });
 
-
   /**
    * GET /login
    * Login page.
@@ -141,8 +140,6 @@ module.exports = function (app) {
       });
       console.log('---------------TRANSPORTER-------------------');
       console.log(transporter);
-      console.log('---------------USER.EMAIL-------------------');
-      console.log(user.email);
       console.log('----------------------------------');
       const mailOptions = {
         to: user.email,
